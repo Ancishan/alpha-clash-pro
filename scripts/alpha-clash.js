@@ -14,6 +14,11 @@
 // scoreSection.classList.add('hidden')
 
 // }
+function handleKeyboardButtonPress(){
+    console.log('button pressed');
+}
+document.addEventListener('keyup',handleKeyboardButtonPress)
+
 function continueGame(){
     // step-1:generate a random alphabet
     const alphabet = getARandomAlphabet();
@@ -25,7 +30,6 @@ function continueGame(){
 
     // set background color
     setBackgroundColorById(alphabet);
-
 }
 
 
